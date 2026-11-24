@@ -1,23 +1,4 @@
-# 🎙️ Transcrição de Áudio com Whisper e Extração de Pontos-Chave com Ollama
 
-Projeto desenvolvido para a **Avaliação Online 7**. A aplicação recebe um áudio `.wav` ou `.mp3`, transcreve com Whisper e utiliza o Ollama para gerar resumo e pontos-chave.
-
-## Objetivo
-
-1. Receber um arquivo de áudio.
-2. Transcrever o conteúdo usando Whisper.
-3. Enviar o texto transcrito ao Ollama.
-4. Gerar resumo, pontos-chave e conclusão.
-5. Salvar o resultado em um arquivo `.txt`.
-
-## Tecnologias
-
-- Python
-- faster-whisper (implementação otimizada do Whisper)
-- Ollama
-- Llama 3.2 3B
-- Tkinter
-- Requests
 
 ## Estrutura do projeto
 
@@ -109,20 +90,6 @@ flowchart TD
     E --> F[Arquivo TXT]
 ```
 
-## Solução de problemas
-
-- **Ollama não conecta:** abra o aplicativo Ollama e confira `ollama list`.
-- **Modelo não encontrado:** execute `ollama pull llama3.2:3b`.
-- **Primeira transcrição demora:** o faster-whisper baixa o modelo `base` na primeira execução.
-- **Áudio inválido:** use arquivos `.wav` ou `.mp3`.
-- **Erro de dependência:** confira se o ambiente virtual está ativado e execute novamente `pip install -r requirements.txt`.
-
-## Vídeo de demonstração
-
-Grave a execução do programa, seleção do áudio, transcrição e resumo. Depois, substitua o texto abaixo pelo link do vídeo:
-
-**Link do vídeo:** `COLE_AQUI_O_LINK_DO_VIDEO`
-
 ## Referências
 
 - [Whisper — OpenAI](https://github.com/openai/whisper)
@@ -130,10 +97,4 @@ Grave a execução do programa, seleção do áudio, transcrição e resumo. Dep
 - [Ollama](https://ollama.com/)
 - [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
-## Autor
 
-Projeto acadêmico — Avaliação Online 7.
-
-## Licença
-
-Distribuído sob a licença MIT. Consulte o arquivo `LICENSE`.
